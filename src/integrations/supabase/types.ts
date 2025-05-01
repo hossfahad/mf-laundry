@@ -9,7 +9,54 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      [_ in never]: never
+      laundry_requests: {
+        Row: {
+          address: string
+          city: string
+          created_at: string
+          date: string
+          email: string | null
+          id: string
+          name: string
+          notes: string | null
+          phone: string
+          service_type: string
+          status: string
+          time: string
+          zip_code: string
+        }
+        Insert: {
+          address: string
+          city?: string
+          created_at?: string
+          date: string
+          email?: string | null
+          id?: string
+          name: string
+          notes?: string | null
+          phone: string
+          service_type: string
+          status?: string
+          time: string
+          zip_code: string
+        }
+        Update: {
+          address?: string
+          city?: string
+          created_at?: string
+          date?: string
+          email?: string | null
+          id?: string
+          name?: string
+          notes?: string | null
+          phone?: string
+          service_type?: string
+          status?: string
+          time?: string
+          zip_code?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
