@@ -80,5 +80,17 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
-  }
+  },
+  "description": "laundry-client-site",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hossfahad/spotless-suds-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hossfahad/spotless-suds-site/issues"
+  },
+  "homepage": "https://github.com/hossfahad/spotless-suds-site#readme"
 }
