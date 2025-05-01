@@ -127,7 +127,7 @@ const Request = () => {
                   <Phone size={20} className="text-laundry-blue" />
                   <p className="font-['Inter'] font-normal">Prefer to request by phone?</p>
                 </div>
-                <p className="font-['Open_Sans'] font-light">Call us at <span className="font-normal">929-346-8509</span> to schedule your pickup</p>
+                <p className="font-['Open_Sans'] font-light">Call or text us at <span className="font-normal">929-346-8509</span> to schedule your pickup</p>
               </div>
               
               <div className="bg-white/80 backdrop-blur-md rounded-xl shadow-xl p-8 border border-white/60">
