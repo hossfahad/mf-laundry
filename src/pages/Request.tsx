@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useToast } from "@/hooks/use-toast";
@@ -110,11 +109,18 @@ const Request = () => {
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-laundry-blue to-blue-500 text-white py-16 relative overflow-hidden backdrop-blur-sm">
           <div className="absolute inset-0 bg-blue-500 opacity-10 blur-2xl"></div>
-          <div className="container mx-auto px-4 text-center relative z-10">
-            <h1 className="text-4xl md:text-5xl font-normal mb-4 font-['Inter']">Request Pickup & Delivery</h1>
-            <p className="text-xl max-w-2xl mx-auto font-['Open_Sans'] font-light">
-              Free pickup and delivery service for your convenience
-            </p>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+              <div className="md:w-1/2 order-2 md:order-1 text-center md:text-left">
+                <h1 className="text-4xl md:text-5xl font-normal mb-4 font-['Inter']">Request Pickup & Delivery</h1>
+                <p className="text-xl max-w-2xl mx-auto md:mx-0 font-['Open_Sans'] font-light">
+                  Free pickup and delivery service for your convenience
+                </p>
+              </div>
+              <div className="md:w-1/2 flex justify-center order-1 md:order-2 mb-8 md:mb-0">
+                <img src="/pexels-cottonbro-5854034.jpg" alt="Laundry pickup" className="rounded-xl shadow-2xl w-[320px] md:w-[420px] lg:w-[480px] border-4 border-white" />
+              </div>
+            </div>
           </div>
         </section>
         

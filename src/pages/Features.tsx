@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -11,7 +10,8 @@ const Features = () => {
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="bg-laundry-blue text-white py-16">
-          <div className="container mx-auto px-4 text-center">
+          <div className="container mx-auto px-4 text-center flex flex-col items-center">
+            <img src="/pexels-polina-tankilevitch-4440572.jpg" alt="Laundry service" className="rounded-xl shadow-lg w-full max-w-md mb-8" />
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
             <p className="text-xl max-w-2xl mx-auto">
               We offer a comprehensive range of laundry services to meet all your needs

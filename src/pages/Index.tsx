@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Truck, Package, Clock, Phone } from 'lucide-react';
@@ -26,28 +25,44 @@ const Index = () => {
                   </Link>
                 </div>
               </div>
-              <div className="md:w-1/2">
-                <div className="bg-white p-6 rounded-lg shadow-lg">
-                  <h2 className="text-laundry-blue text-2xl font-bold mb-4">Hours & Location</h2>
-                  <div className="flex items-start space-x-3 mb-3">
-                    <Clock className="text-laundry-blue mt-1" />
-                    <div>
-                      <p className="text-gray-800 font-medium">Open Every Day</p>
-                      <p className="text-gray-600">7:00AM - 10:00PM</p>
+              <div className="md:w-1/2 relative flex flex-col items-center min-h-[420px]">
+                {/* Large, creatively positioned image */}
+                <img
+                  src="/pexels-ekaterinabelinskaya-4700383.jpg"
+                  alt="Modern laundry scene"
+                  className="rounded-3xl shadow-2xl w-[390px] md:w-[480px] lg:w-[540px] xl:w-[600px] absolute -top-10 left-1/2 -translate-x-1/2 z-10 rotate-2 border-4 border-white"
+                  style={{ boxShadow: '0 12px 40px 0 rgba(30,40,80,0.25)' }}
+                />
+                {/* Overlapping smaller image */}
+                <img
+                  src="/pexels-chikawaztla-31902663.jpg"
+                  alt="Laundry baskets"
+                  className="rounded-xl shadow-lg w-[180px] md:w-[220px] absolute bottom-0 right-2 z-20 border-2 border-white rotate-[-4deg]"
+                  style={{ boxShadow: '0 8px 24px 0 rgba(30,40,80,0.12)' }}
+                />
+                <div className="relative z-30 mt-[260px] w-full max-w-md">
+                  <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+                    <h2 className="text-laundry-blue text-2xl font-bold mb-4">Hours & Location</h2>
+                    <div className="flex items-start space-x-3 mb-3">
+                      <Clock className="text-laundry-blue mt-1" />
+                      <div>
+                        <p className="text-gray-800 font-medium">Open Every Day</p>
+                        <p className="text-gray-600">7:00AM - 10:00PM</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-start space-x-3 mb-3">
-                    <Phone className="text-laundry-blue mt-1" />
-                    <div>
-                      <p className="text-gray-800 font-medium">Phone Number</p>
-                      <p className="text-gray-600">929-346-8509</p>
+                    <div className="flex items-start space-x-3 mb-3">
+                      <Phone className="text-laundry-blue mt-1" />
+                      <div>
+                        <p className="text-gray-800 font-medium">Phone Number</p>
+                        <p className="text-gray-600">929-346-8509</p>
+                      </div>
                     </div>
+                    <div className="mb-4">
+                      <p className="text-gray-800 font-medium">Address:</p>
+                      <p className="text-gray-600">21-15 21st Ave 11105, Astoria, New York</p>
+                    </div>
+                    <p className="text-laundry-blue font-medium">Se habla Español</p>
                   </div>
-                  <div className="mb-4">
-                    <p className="text-gray-800 font-medium">Address:</p>
-                    <p className="text-gray-600">21-15 21st Ave 11105, Astoria, New York</p>
-                  </div>
-                  <p className="text-laundry-blue font-medium">Se habla Español</p>
                 </div>
               </div>
             </div>
